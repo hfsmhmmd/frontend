@@ -5,10 +5,8 @@ import TableBook from '../components/tableBook'
 
   
 function DashboardPage() {
-
-
   return (
-    <div className='p-4 ' > 
+    <div className='w-full' > 
     <div className="navbar bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">

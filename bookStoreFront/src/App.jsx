@@ -13,10 +13,10 @@ import Landing from './pages/landing'
 
 
 //dashboard admins
-import AddBook from './dashboard/components/addBook'
-import DeleteBook from './dashboard/components/deleteBook'
-import UpdateBook from './dashboard/components/updateBook'
-import ViewBook from './dashboard/components/viewBook'
+import AddBook from './dashboard/pages/addBook'
+import DeleteBook from './dashboard/pages/deleteBook'
+import UpdateBook from './dashboard/pages/updateBook'
+import ViewBook from './dashboard/pages/viewBook'
 
 function App() {
   const [count, setCount] = useState(0)

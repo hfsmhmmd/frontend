@@ -28,7 +28,6 @@ function tableBook() {
 
 <div className="overflow-x-auto px-3">
   <table className="table">
-
     <thead>
       <tr>
         <th>
@@ -79,19 +78,19 @@ function tableBook() {
           </td>
         <th>
         <div className='space-x-2'>
-            <Link to={`/dashboard/ViewBook/:${item._id}`}>
+            <Link to={`/dashboard/ViewBook/${item._id}`}>
                 <button className="btn btn-md ">
                 <AiTwotoneEye />
                 </button>
             </Link>
 
-            <Link to={`/dashboard/UpdateBook/:${item._id}`}>
+            <Link to={`/dashboard/UpdateBook/${item._id}`}>
               <button className="btn btn-md">
                 <AiTwotoneEdit />
               </button>
             </Link>
 
-            <Link to={`/dashboard/DeleteBook/:${item._id}`}>
+            <Link to={`/dashboard/DeleteBook/${item._id}`}>
           <button className="btn btn-md">   
           <AiTwotoneDelete />
           </button>
