@@ -10,7 +10,7 @@ import SectionSearch from '../organism/sectionSearch'
 function Landing()  {
   return (
 
-   <div className='flex flex-col items-evenly w-full pt-5 space-y-6  '>
+   <div className=' flex flex-col items-evenly w-full pl-4 pt-5 space-y-6  '>
     <section>
     <HeaderPage/>
     </section>

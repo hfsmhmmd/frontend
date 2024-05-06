@@ -25,7 +25,7 @@ function Carousel() {
   
   // const {data} = books ; 
   return (
-    <div className="carousel carousel-center max-w-lg lg:max-w-lg   pb-6 space-x-4  rounded-box">
+    <div className="carousel carousel-center w-full  pb-6 space-x-4  rounded-box">
     
   { books ? books.map((item)=>  <CardProducts 
       title={item.title}

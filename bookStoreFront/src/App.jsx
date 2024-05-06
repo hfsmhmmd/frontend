@@ -2,18 +2,37 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { BrowserRouter } from 'react-router-dom'
 
+// library
+import { Route, Routes } from 'react-router-dom'
+import DashboardPage from './dashboard/pages/dashboard'
+
+
+// component users
 import Landing from './pages/landing'
 
+
+//dashboard admins
+import AddBook from './dashboard/components/addBook'
+import DeleteBook from './dashboard/components/deleteBook'
+import UpdateBook from './dashboard/components/updateBook'
+import ViewBook from './dashboard/components/viewBook'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='main w-11/12 h-full bg-sky-200'>
-    {/* <Landing/> */}
-    
+    <div className='main'>
+      <Routes>
+        <Route path='/' element={<Landing/>}/>
+
+          <Route path='dashboard' element={<DashboardPage/>}/>
+          <Route path='dashboard/addBook' element={<AddBook/>}/>
+          <Route path='dashboard/ViewBook/:id' element={<ViewBook/>}/>
+          <Route path='dashboard/UpdateBook/:id' element={<UpdateBook/>}/>
+          <Route path='dashboard/DeleteBook/:id' element={<DeleteBook/>}/>
+      </Routes>
+
     </div>
  
   )
